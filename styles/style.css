@@ -324,7 +324,7 @@ main {
 .habit-pictures {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 /*Header Responsive*/
 @media (max-width: 576px) {
@@ -352,7 +352,7 @@ main {
 .run {
   background-color: rgb(58, 57, 57);
   margin: 20px 100px;
-  padding: 20px 30px;
+  padding: 20px 50px;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
