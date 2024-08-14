@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/miama");
-
+body {
+  background-color: rgba(34, 34, 34, 1);
+}
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -18,7 +20,7 @@
 }
 /* nav-bar */
 .bg-dark {
-  background-color: rgba(34, 34, 34, 1);
+  background-color: rgb(58, 57, 57);
   opacity: 0.9;
 }
 
@@ -191,6 +193,18 @@ main {
   background-color: #e6533c;
   border-radius: 50%;
 }
+.triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  top: 10px;
+
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid white;
+  transform: rotate(90deg);
+}
 /*Banner Responsive*/
 @media (max-width: 576px) {
   .banner {
@@ -198,7 +212,9 @@ main {
     display: flex;
     flex-direction: column;
   }
-
+  .big {
+    width: 200px;
+  }
   .banner-title {
     font-size: 2rem;
     margin-top: 0px;
@@ -330,12 +346,15 @@ main {
 }
 /*Run Section*/
 .run {
-  background-color: rgb(30, 29, 29);
+  background-color: rgb(58, 57, 57);
   margin: 20px 100px;
   padding: 20px;
   border-radius: 1rem;
   display: flex;
   gap: 300px;
+}
+.run-content {
+  max-width: 250px;
 }
 .run-picture img {
   width: 100%;
@@ -348,7 +367,6 @@ main {
 /*Run Section Responsive*/
 @media (max-width: 576px) {
   .run {
-    background-color: rgb(30, 29, 29);
     margin: 20px 20px;
     padding: 20px 2.4rem;
     border-radius: 1rem;
@@ -376,7 +394,7 @@ main {
   margin: 30px 300px;
 }
 .bmi-calculator {
-  background-color: rgb(30, 29, 29);
+  background-color: rgb(58, 57, 57);
   padding: 3rem 100px;
   display: flex;
   gap: 100px;
@@ -448,6 +466,7 @@ input::placeholder {
 /*Team Section*/
 .team {
   margin: 20px 100px;
+  margin-bottom: 50px;
 }
 .team-header {
   text-align: center;
@@ -458,13 +477,13 @@ input::placeholder {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  background-color: rgb(30, 29, 29);
+  background-color: rgb(58, 57, 57);
   padding: 20px;
   border-radius: 1rem;
 }
 .picture-1 img {
   width: 100%;
-  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  height: auto;
   max-width: 350px;
   border-radius: 1rem;
   position: absolute;
@@ -489,7 +508,7 @@ h4 {
   text-align: center;
   color: white;
   width: 100%;
-  padding-top: 100%; /* Maintain aspect ratio (1:1) */
+  padding-top: 100%;
   overflow: hidden;
 }
 .bottom-left {
@@ -520,5 +539,121 @@ h4 {
     background-color: rgb(30, 29, 29);
     padding: 20px;
     border-radius: 1rem;
+  }
+}
+/*Contact Section*/
+footer {
+  padding: 30px 100px;
+  padding-bottom: 10px;
+  background-color: rgb(58, 57, 57);
+}
+.about-us {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.about {
+  max-width: 300px;
+}
+
+.about h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e6533c;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 10px;
+}
+
+.links {
+  max-width: 200px;
+}
+
+.links h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links ul li {
+  font-size: 1rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.links ul li:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+footer > p {
+  text-align: center;
+}
+footer hr {
+  border: none;
+  border-top: 1px solid rgba(112, 112, 112, 0.65);
+}
+/*Creative Section*/
+.quote-carousel {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(34, 34, 34, 1);
+}
+
+.carousel-container {
+  width: 200%;
+  animation: slide 10s linear infinite;
+}
+
+.carousel-item {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.quote-footer {
+  color: white;
+  background-color: rgba(34, 34, 34, 1);
+  font-size: 3rem;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*Responsive footer and creative*/
+@media (max-width: 576px) {
+  footer {
+    padding: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(58, 57, 57);
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .carousel-item {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .quote-footer {
+    font-size: 0.7rem;
   }
 }
