@@ -423,6 +423,10 @@ input::placeholder {
 }
 /*BMI calculator responsive*/
 @media (max-width: 576px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
   .bmi-header {
     margin: 30px 30px;
     margin-left: 20px;
@@ -432,5 +436,27 @@ input::placeholder {
     display: flex;
     gap: 20px;
     flex-direction: column;
+  }
+}
+/*Team Section*/
+.team {
+  margin: 20px 100px;
+}
+.team-header {
+  text-align: center;
+  padding: 0px 230px;
+  margin-bottom: 50px;
+}
+@media (max-width: 576px) {
+  .team-header {
+    padding: 0px 50px;
+  }
+  .team {
+    margin: 20px 20px;
+  }
+  .team-header {
+    text-align: center;
+    padding: 0px 25px;
+    margin-bottom: 50px;
   }
 }
