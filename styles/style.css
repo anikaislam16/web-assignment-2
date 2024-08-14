@@ -520,7 +520,7 @@ h4 {
 
 .bottom-left {
   position: relative;
-  bottom: 4rem;
+  bottom: 1rem;
   left: 1rem;
   max-width: 150px;
   white-space: nowrap;
