@@ -469,7 +469,7 @@ input::placeholder {
 }
 /*Team Section*/
 .team {
-  margin: 20px 100px;
+  margin: 60px 100px;
   margin-bottom: 50px;
 }
 .team-header {
@@ -518,14 +518,14 @@ h4 {
 }
 .bottom-left span {
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(170, 163, 163, 0.65);
 }
 @media (max-width: 576px) {
   .team-header {
     padding: 0px 50px;
   }
   .team {
-    margin: 20px 20px;
+    margin: 60px 20px;
   }
   .team-header {
     text-align: center;
