@@ -367,9 +367,7 @@ main {
   height: auto;
   max-width: 400px;
 }
-.club-button {
-  margin-top: 20px;
-}
+
 /*Run Section Responsive*/
 @media (max-width: 576px) {
   .run {
