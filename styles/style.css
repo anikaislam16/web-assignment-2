@@ -348,7 +348,7 @@ main {
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
   }
   .run-picture img {
     width: 100%;
@@ -359,5 +359,78 @@ main {
     font-style: bold;
     margin: 0;
     padding: 0;
+  }
+  .club-button {
+    width: 100%;
+  }
+}
+/*BMI Section*/
+.bmi-header {
+  margin: 30px 300px;
+}
+.bmi-calculator {
+  background-color: rgb(30, 29, 29);
+  padding: 3rem 100px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.header-2 {
+  font-size: 1.6rem;
+  color: white;
+  font-style: bold;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.6rem;
+}
+table th {
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 300px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #555;
+  text-align: left;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+input,
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+#activity {
+  grid-column: span 2;
+}
+/*BMI calculator responsive*/
+@media (max-width: 576px) {
+  .bmi-header {
+    margin: 30px 30px;
+    margin-left: 20px;
+  }
+  .bmi-calculator {
+    padding: 3rem 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
   }
 }
