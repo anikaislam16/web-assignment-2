@@ -340,6 +340,7 @@ main {
   }
   .habits {
     padding: 0px 40px;
+    line-height: 1.5;
   }
   .habit-pictures {
     display: flex;
@@ -367,7 +368,7 @@ main {
   max-width: 400px;
 }
 .club-button {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 /*Run Section Responsive*/
 @media (max-width: 576px) {
