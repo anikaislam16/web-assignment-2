@@ -345,20 +345,20 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
   }
 }
 /*Run Section*/
 .run {
   background-color: rgb(58, 57, 57);
   margin: 20px 100px;
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
 }
 .run-content {
-  max-width: 250px;
+  max-width: 350px;
 }
 .run-picture img {
   width: 100%;
