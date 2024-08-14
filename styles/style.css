@@ -324,8 +324,40 @@ main {
     justify-content: center;
     gap: 10px;
   }
-  /*Run Section*/
+}
+/*Run Section*/
+.run {
+  background-color: rgb(30, 29, 29);
+  margin: 20px 100px;
+  padding: 20px;
+  border-radius: 1rem;
+  display: flex;
+  gap: 200px;
+}
+.run-picture img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 600px;
+}
+/*Run Section Responsive*/
+@media (max-width: 576px) {
   .run {
-    background-color: rgba(34, 34, 34, 1);
+    background-color: rgb(30, 29, 29);
+    margin: 20px 20px;
+    padding: 20px 2.4rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .run-picture img {
+    width: 100%;
+  }
+  .header-1 {
+    font-size: 1.6rem;
+    color: white;
+    font-style: bold;
+    margin: 0;
+    padding: 0;
   }
 }
