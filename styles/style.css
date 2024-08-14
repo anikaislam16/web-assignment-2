@@ -109,6 +109,10 @@ main {
   color: white;
   margin: 0 0;
   margin-top: 100px;
+  margin-bottom: 50px;
+}
+.space {
+  margin-bottom: 20px;
 }
 .shape {
   font-size: 4.5rem;
@@ -146,14 +150,14 @@ main {
 .picture-content img {
   width: 100%;
   height: auto;
-  max-width: 500px;
+  max-width: 350px;
 }
 .experience-year {
   height: 100px;
-  width: 250px;
+  width: 200px;
   background-color: rgba(255, 255, 255, 0.1);
   position: relative;
-  left: 500px;
+  left: 400px;
   top: 200px;
   text-align: left;
   border: 0px;
@@ -351,7 +355,7 @@ main {
   padding: 20px;
   border-radius: 1rem;
   display: flex;
-  gap: 300px;
+  justify-content: space-between;
 }
 .run-content {
   max-width: 250px;
@@ -359,7 +363,8 @@ main {
 .run-picture img {
   width: 100%;
   border-radius: 8px;
-  max-height: 500px;
+  height: auto;
+  max-width: 400px;
 }
 .club-button {
   margin-top: 50px;
